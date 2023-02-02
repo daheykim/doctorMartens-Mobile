@@ -167,7 +167,13 @@ body {
 .visual_main {
   width: 100%;
   overflow-y: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
+.visual_main::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
 .visual_main .visual_main_wrap {
   width: 400%;
   position: relative;
@@ -305,6 +311,16 @@ body {
   width: 100%;
   overflow-y: hidden;
 }
+.best_product_box::-webkit-scrollbar{
+  height: 4px;
+}
+.best_product_box::-webkit-scrollbar-thumb {
+  background: #000; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+.best_product_box::-webkit-scrollbar-track {
+  background: #fff
+}
 .best .best_sheets .best_sheet .best_product_box .best_product_list {
   width: 350%;
 }
@@ -418,6 +434,16 @@ body {
 .new_arrivals .new_sheets .new_sheet .new_product_box {
   width: 100%;
   overflow-y: hidden;
+}
+.new_product_box::-webkit-scrollbar{
+  height: 4px;
+}
+.new_product_box::-webkit-scrollbar-thumb {
+  background: #000; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+.new_product_box::-webkit-scrollbar-track {
+  background: #fff
 }
 .new_arrivals .new_sheets .new_sheet .new_product_box .new_product_list {
   width: 340%;
